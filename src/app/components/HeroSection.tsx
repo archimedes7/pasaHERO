@@ -7,9 +7,10 @@ import SearchForm from "./SearchForm";
 const Map = dynamic(() => import("./Map"), { ssr: false });
 
 const HeroSection = () => (
-  <section className="relative text-center py-20" style={{ height: "400px" }}>
-    <div className="relative w-full h-full">
-      <div className="absolute inset-0 h-full w-full overflow-hidden rounded-lg z-0">
+  <section className="relative">
+    <div className="relative h-[300px] mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      {" "}
+      <div className="absolute inset-0 overflow-hidden rounded-lg z-0">
         <Map />
         <div className="absolute inset-0 bg-black opacity-30 rounded-lg"></div>{" "}
         {/* Add overlay */}

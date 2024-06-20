@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <main className="min-h-screen bg-gray-100">
       <Header />
-      <div className="pt-24">
+      <div>
         {" "}
         {/* To ensure content is not hidden behind the fixed header */}
         <HeroSection />
