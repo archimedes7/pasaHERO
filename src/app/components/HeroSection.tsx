@@ -16,8 +16,11 @@ const HeroSection = () => (
         {/* Add overlay */}
       </div>
       <div className="absolute inset-0 flex flex-col justify-center items-center z-10">
-        <h2 className="text-5xl font-bold mb-4 text-custom-orange">
-          Share rides with Carpooler
+        <h2
+          className="font-bold mb-4 text-custom-orange"
+          style={{ fontSize: "1.25rem" }}
+        >
+          Become a HERO: Share Rides, Save Costs, and Travel with Pets.
         </h2>{" "}
         {/* Ensure text-custom-orange class is applied */}
         <p className="mb-8 text-lg text-custom-orange">
