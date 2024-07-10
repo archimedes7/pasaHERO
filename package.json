@@ -13,6 +13,7 @@
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
     "leaflet": "^1.9.4",
+    "lucide-react": "^0.407.0",
     "mapbox-gl": "^3.4.0",
     "mongodb": "^5.9.2",
     "next": "14.2.4",
