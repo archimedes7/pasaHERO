@@ -19,7 +19,7 @@ const ExclusiveDeals = () => (
           </p>
         </div>
       </div>
-      <button className="bg-[#ff9500] text-black px-4 py-2 rounded-xl text-sm font-roboto leading-5">
+      <button className="bg-[#007f8a] text-white px-4 py-2 rounded-xl text-sm font-roboto leading-5">
         Join now
       </button>
     </div>

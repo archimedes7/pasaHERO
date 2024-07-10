@@ -241,7 +241,7 @@ const SearchForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-custom-orange text-white px-6 py-2 rounded-full shadow-md hover:bg-orange-600 transition-colors"
+          className="bg-white text-custom-green border-2 border-custom-green px-6 py-2 rounded-full shadow-md hover:bg-custom-green hover:text-white transition-colors"
         >
           Search
         </button>

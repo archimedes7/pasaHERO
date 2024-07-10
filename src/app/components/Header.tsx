@@ -33,17 +33,17 @@ const Header = () => (
           </Link> */}
           <Link
             href="/launchsoon"
-            className="text-gray-600 hover:text-gray-900"
+            className="text-custom-green hover:text-gray-900"
           >
             Launching Soon
           </Link>
         </nav>
       </div>
       <div>
-        <button className="bg-[#b9deff] text-black px-4 py-2 rounded-xl text-sm mr-2">
+        <button className="bg-[#ffffff] text-custom-green px-4 py-2 rounded-xl text-sm mr-2">
           Join
         </button>
-        <button className="bg-[#ff9500] text-black px-4 py-2 rounded-xl text-sm font-roboto leading-5">
+        <button className="bg-[#007f8a] text-white px-4 py-2 rounded-xl text-sm font-roboto leading-5">
           Login
         </button>
       </div>
