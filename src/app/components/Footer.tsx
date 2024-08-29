@@ -1,12 +1,23 @@
-// src/app/components/Footer.tsx
 "use client";
+import Link from "next/link";
 
 const Footer = () => (
-  <footer className="bg-gray-800 text-white py-4">
-    <div className="container mx-auto flex justify-between">
-      <p>Carpooler &copy; 2024</p>
-      <p>Your go-to ride-sharing platform since 2020!</p>
-      <p>Support: Help Center | Assistance | Ride with us | Get in touch</p>
+  <footer className="bg-black py-4 mt-auto">
+    <div className="container mx-auto flex justify-between items-center">
+      <div>
+        <p className="text-white font-bold">pasaHERO.PH</p>
+        <p className="text-white">
+          Your go-to ride-sharing platform this A1stCentury!
+        </p>
+        <p className="text-custom-green">pasaHERO &copy; 2024</p>
+      </div>
+      <div className="text-right">
+        <p className="text-white font-bold">Support</p>
+        <p className="text-white">Help Center</p>
+        <Link href="/legal" className="text-white hover:text-custom-green">
+          Legal
+        </Link>
+      </div>
     </div>
   </footer>
 );
