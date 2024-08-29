@@ -17,7 +17,7 @@ const ExclusiveDeals = () => (
           </h3>
           <p className="text-custom-green">
             Want exclusive offers and discounts for your ridesharing adventures?
-            Sign up for our Ride Club!
+            Sign up in our wait list!
           </p>
         </div>
       </div>

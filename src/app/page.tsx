@@ -5,6 +5,7 @@ import PopularDestinations from "./components/PopularDestinations";
 import ExclusiveDeals from "./components/ExclusiveDeals";
 import RidesLoved from "./components/RidesLoved";
 import Footer from "./components/Footer";
+import { PopularDestinationsCarousel } from "./components/PopularDestinationsCarousel";
 
 const Home = () => {
   const destinations = [
@@ -75,9 +76,16 @@ const Home = () => {
       price: "from ₱450/ride",
       imageUrl: "https://images.unsplash.com/photo-1566715801603-e0b5bcbff871",
     },
+
     {
       title: "Sabay Night Ride",
       location: "Avoid traffic",
+      price: "from ₱180/ride",
+      imageUrl: "https://images.unsplash.com/photo-1606340820555-cc805b3268fa",
+    },
+    {
+      title: "Tara sa Concert",
+      location: "Anywhere",
       price: "from ₱180/ride",
       imageUrl: "https://images.unsplash.com/photo-1606340820555-cc805b3268fa",
     },
@@ -90,8 +98,9 @@ const Home = () => {
         {" "}
         {/* To ensure content is not hidden behind the fixed header */}
         <HeroSection />
-        <PopularDestinations destinations={destinations} />
-        <RidesLoved rides={rides} />
+        <PopularDestinationsCarousel />
+        {/* <PopularDestinations destinations={destinations} /> */}
+        {/* <RidesLoved rides={rides} /> */}
         <ExclusiveDeals />
         <Footer />
       </div>
