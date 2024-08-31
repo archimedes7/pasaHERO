@@ -25,7 +25,7 @@ const useDebounce = (value, delay) => {
   return debouncedValue;
 };
 
-const SearchForm = () => {
+const SearchForm = ({ isMobile = false }) => {
   const [formData, setFormData] = useState({
     whereTo: "",
     time: "",
@@ -104,14 +104,14 @@ const SearchForm = () => {
   };
 
   const renderInput = (name, placeholder, icon) => (
-    <div ref={inputRefs[name]} className="relative flex-grow">
+    <div ref={inputRefs[name]} className="relative flex-grow mb-2 sm:mb-0">
       <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-md">
         {icon}
         <input
           type="text"
           name={name}
           placeholder={placeholder}
-          className="ml-2 w-full text-gray-700 focus:outline-none"
+          className="ml-2 w-full text-gray-700 focus:outline-none text-sm sm:text-base"
           value={formData[name]}
           onChange={handleInputChange}
         />
@@ -133,7 +133,7 @@ const SearchForm = () => {
           {suggestions[name].map((suggestion, index) => (
             <li
               key={index}
-              className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              className="px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm"
               onClick={() => {
                 setFormData((prev) => ({
                   ...prev,
@@ -150,24 +150,41 @@ const SearchForm = () => {
     </div>
   );
 
+  if (isMobile) {
+    return (
+      <div className="w-full">
+        <input
+          type="text"
+          placeholder="Where to?"
+          className="w-full p-2 rounded-lg border border-gray-300 text-black"
+        />
+        <button className="w-full mt-2 bg-custom-green text-white py-2 rounded-lg">
+          Search
+        </button>
+      </div>
+    );
+  }
+
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex items-center w-full space-x-2 px-4"
+      className="flex flex-col sm:flex-row items-center w-full space-y-2 sm:space-y-0 sm:space-x-2 px-4"
     >
-      {error && <div className="text-red-500 w-full text-center">{error}</div>}
+      {error && (
+        <div className="text-red-500 w-full text-center mb-2">{error}</div>
+      )}
       {renderInput(
         "whereTo",
         "Where to?",
         <MapPin size={20} className="text-gray-400" />
       )}
-      <div className="relative flex-grow">
+      <div className="relative flex-grow mb-2 sm:mb-0">
         <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-md">
           <Calendar size={20} className="text-gray-400" />
           <input
             type="datetime-local"
             name="time"
-            className="ml-2 w-full text-gray-700 focus:outline-none"
+            className="ml-2 w-full text-gray-700 focus:outline-none text-sm sm:text-base"
             value={formData.time}
             onChange={handleInputChange}
           />
@@ -178,27 +195,27 @@ const SearchForm = () => {
         "Select destination",
         <MapPin size={20} className="text-gray-400" />
       )}
-      <div className="relative flex-grow">
+      <div className="relative flex-grow mb-2 sm:mb-0">
         <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-md">
           <Users size={20} className="text-gray-400" />
           <input
             type="number"
             name="seats"
             placeholder="Seats"
-            className="ml-2 w-full text-gray-700 focus:outline-none"
+            className="ml-2 w-full text-gray-700 focus:outline-none text-sm sm:text-base"
             value={formData.seats}
             onChange={handleInputChange}
           />
         </div>
       </div>
-      <div className="relative flex-grow">
+      <div className="relative flex-grow mb-2 sm:mb-0">
         <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-md">
           <PawPrint size={20} className="text-gray-400" />
           <input
             type="number"
             name="pets"
             placeholder="Pets"
-            className="ml-2 w-full text-gray-700 focus:outline-none"
+            className="ml-2 w-full text-gray-700 focus:outline-none text-sm sm:text-base"
             value={formData.pets}
             onChange={handleInputChange}
           />
@@ -206,7 +223,7 @@ const SearchForm = () => {
       </div>
       <button
         type="submit"
-        className="bg-white text-custom-green border-2 border-custom-green px-6 py-2 rounded-full shadow-md hover:bg-custom-green hover:text-white transition-colors"
+        className="w-full sm:w-auto bg-white text-custom-green border-2 border-custom-green px-6 py-2 rounded-full shadow-md hover:bg-custom-green hover:text-white transition-colors"
       >
         Search
       </button>
