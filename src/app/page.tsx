@@ -1,7 +1,6 @@
 // src/app/page.tsx
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import PopularDestinations from "./components/PopularDestinations";
 import ExclusiveDeals from "./components/ExclusiveDeals";
 import RidesLoved from "./components/RidesLoved";
 import Footer from "./components/Footer";
@@ -96,11 +95,8 @@ const Home = () => {
       <Header />
       <div>
         {" "}
-        {/* To ensure content is not hidden behind the fixed header */}
         <HeroSection />
         <PopularDestinationsCarousel />
-        {/* <PopularDestinations destinations={destinations} /> */}
-        {/* <RidesLoved rides={rides} /> */}
         <ExclusiveDeals />
         <Footer />
       </div>

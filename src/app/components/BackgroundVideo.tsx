@@ -20,7 +20,7 @@ const BackgroundVideo = () => {
     return (
       <div
         className="absolute inset-0 h-full w-full bg-cover bg-center"
-        style={{ backgroundImage: "url('/path-to-your-fallback-image.jpg')" }}
+        style={{ backgroundImage: "url('/travel-route.png')" }}
       />
     );
   }

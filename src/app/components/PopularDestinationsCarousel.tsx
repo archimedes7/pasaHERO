@@ -3,8 +3,8 @@ import { Carousel, Card } from "@/app/components/ui/apple-cards-carousel";
 
 const DummyContent = () => {
   return (
-    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-4 md:p-8 rounded-3xl mb-4">
+      <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-base lg:text-2xl font-sans max-w-3xl mx-auto">
         Discover popular destinations and enjoy comfortable rides with our
         service.
       </p>
@@ -57,11 +57,29 @@ export function PopularDestinationsCarousel() {
   ));
 
   return (
-    <div className="w-full h-full py-20">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-custom-green dark:text-neutral-200 font-sans">
+    <div className="w-full py-8 md:py-20">
+      <h2 className="max-w-7xl px-4 mx-auto text-xl md:text-3xl lg:text-5xl font-bold text-custom-green dark:text-neutral-200 font-sans mb-4 md:mb-8">
         Popular destinations for ridesharing
       </h2>
-      <Carousel items={cards} />
+      <div className="md:hidden">
+        {/* Mobile layout: scrollable list */}
+        <div className="flex overflow-x-auto space-x-4 px-4 pb-4">
+          {destinations.map((destination, index) => (
+            <div key={index} className="flex-shrink-0 w-64">
+              <img
+                src={destination.src}
+                alt={destination.title}
+                className="w-full h-40 object-cover rounded-lg mb-2"
+              />
+              <h3 className="font-bold text-lg">{destination.title}</h3>
+              <p className="text-sm text-gray-600">{destination.category}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="hidden md:block">
+        <Carousel items={cards} />
+      </div>
     </div>
   );
 }
