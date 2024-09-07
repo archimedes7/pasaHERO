@@ -223,7 +223,7 @@ const SearchForm = ({ isMobile = false }) => {
       </div>
       <button
         type="submit"
-        className="w-full sm:w-auto bg-white text-custom-green border-2 border-custom-green px-6 py-2 rounded-full shadow-md hover:bg-custom-green hover:text-white transition-colors"
+        className="w-full sm:w-auto bg-white text-custom-blue border-2 border-custom-yellow px-6 py-2 rounded-full shadow-md hover:bg-custom-red hover:text-white transition-colors"
       >
         Search
       </button>

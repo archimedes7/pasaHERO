@@ -13,7 +13,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "custom-green": "#007f8a",
+        "custom-blue": "#0073e6",
+        "custom-red": "#ff2e2e",
+        "custom-yellow": "#ffd700",
+        "custom-white": "#ffffff",
       },
     },
   },

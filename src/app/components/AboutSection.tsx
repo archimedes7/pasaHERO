@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const AboutSection = () => {
   const [showFullStory, setShowFullStory] = useState(false);
   return (
-    <div className="bg-gradient-to-b from-custom-green to-custom-blue text-white py-16">
+    <div className="bg-gradient-to-b from-custom-blue to-custom-red text-white py-16">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8 text-center">About PasaHERO</h1>
 
@@ -30,7 +30,7 @@ const AboutSection = () => {
             </p>
             {!showFullStory && (
               <button
-                className="text-custom-green underline"
+                className="text-custom-blue underline"
                 onClick={() => setShowFullStory(true)}
               >
                 Read more
@@ -98,7 +98,7 @@ const AboutSection = () => {
                   change in the Philippines' urban mobility landscape.
                 </p>
                 <button
-                  className="text-custom-green underline mt-4"
+                  className="text-custom-blue underline mt-4"
                   onClick={() => setShowFullStory(false)}
                 >
                   Read less
@@ -158,7 +158,7 @@ const AboutSection = () => {
             ].map((value, index) => (
               <li
                 key={index}
-                className="bg-white text-custom-green px-4 py-2 rounded-full text-sm font-medium"
+                className="bg-white text-custom-red px-4 py-2 rounded-full text-sm font-medium"
               >
                 {value}
               </li>

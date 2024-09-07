@@ -58,7 +58,7 @@ export function PopularDestinationsCarousel() {
 
   return (
     <div className="w-full py-8 md:py-20">
-      <h2 className="max-w-7xl px-4 mx-auto text-xl md:text-3xl lg:text-5xl font-bold text-custom-green dark:text-neutral-200 font-sans mb-4 md:mb-8">
+      <h2 className="max-w-7xl px-4 mx-auto text-xl md:text-3xl lg:text-5xl font-bold font-sans mb-4 md:mb-8 bg-gradient-to-r from-custom-blue via-custom-red to-custom-yellow text-transparent bg-clip-text">
         Popular destinations for ridesharing
       </h2>
       <div className="md:hidden">
