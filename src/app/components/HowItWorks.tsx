@@ -14,13 +14,13 @@ const content: ContentItem[] = [
     title: "Download the App",
     description:
       "Get started by downloading the PasaHERO app from your app store.",
-    image: "/pasahero-mobile.png",
+    image: "/pasahero-mobile-orig.png",
   },
   {
     title: "Create Your Account",
     description:
       "Sign up quickly and easily with your email or social media accounts.",
-    image: "/application-form.png",
+    image: "/pasahero-hand.png",
   },
   {
     title: "Plan your route",
@@ -38,7 +38,7 @@ const content: ContentItem[] = [
     title: "Enjoy Your Journey",
     description:
       "Sit back, relax, and enjoy a safe and comfortable ride to your destination.",
-    image: "/enjoy-ride.png",
+    image: "/pasahero-driving.png",
   },
 ];
 

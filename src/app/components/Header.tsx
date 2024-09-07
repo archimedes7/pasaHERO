@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import pasaheroLogo from "../../styles/pasahero-teal-border.svg";
+import pasaheroLogo from "../../styles/pasahero-transparent.png";
 import SearchForm from "@/app/components/SearchForm";
 
 const Header = () => {
@@ -21,8 +21,8 @@ const Header = () => {
               <Image
                 src={pasaheroLogo}
                 alt="pasaHERO.PH"
-                width={50}
-                height={50}
+                width={200}
+                height={200}
                 className="mr-4 md:mr-8"
               />
             </Link>
@@ -32,13 +32,13 @@ const Header = () => {
           <nav className="hidden md:flex space-x-8">
             <Link
               href="/howitworks"
-              className="text-white hover:text-custom-green transition duration-300"
+              className="text-white hover:text-custom-blue transition duration-300"
             >
               How it works?
             </Link>
             <Link
               href="/about"
-              className="text-white hover:text-custom-green transition duration-300"
+              className="text-white hover:text-custom-blue transition duration-300"
             >
               About Us
             </Link>
@@ -46,7 +46,7 @@ const Header = () => {
 
           {/* Early Bird Signup Button */}
           <div className="hidden md:block">
-            <button className="bg-custom-green text-white px-6 py-2 rounded-xl text-sm font-roboto leading-5 hover:bg-custom-green-dark transition duration-300">
+            <button className="bg-custom-blue text-white px-6 py-2 rounded-xl text-sm font-roboto leading-5 hover:bg-custom-blue-dark transition duration-300">
               Early Bird Signup
             </button>
           </div>
@@ -81,18 +81,18 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
               <Link
                 href="/howitworks"
-                className="text-white hover:text-custom-green transition duration-300"
+                className="text-white hover:text-custom-blue transition duration-300"
               >
                 How it works?
               </Link>
               <Link
                 href="/about"
-                className="text-white hover:text-custom-green transition duration-300"
+                className="text-white hover:text-custom-blue transition duration-300"
               >
                 About Us
               </Link>
               <SearchForm isMobile={true} />
-              <button className="bg-custom-green text-white px-6 py-2 rounded-xl text-sm font-roboto leading-5 hover:bg-custom-green-dark transition duration-300 self-start">
+              <button className="bg-custom-blue text-white px-6 py-2 rounded-xl text-sm font-roboto leading-5 hover:bg-custom-blue-dark transition duration-300 self-start">
                 Early Bird Signup
               </button>
             </nav>
