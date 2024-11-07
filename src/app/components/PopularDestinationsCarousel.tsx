@@ -5,8 +5,8 @@ const DummyContent = () => {
   return (
     <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-4 md:p-8 rounded-3xl mb-4">
       <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-base lg:text-2xl font-sans max-w-3xl mx-auto">
-        Discover popular destinations and enjoy comfortable rides with our
-        service.
+        Discover routes and destinations you can share with or most likely
+        contribute
       </p>
     </div>
   );
@@ -59,7 +59,7 @@ export function PopularDestinationsCarousel() {
   return (
     <div className="w-full py-8 md:py-20">
       <h2 className="max-w-7xl px-4 mx-auto text-xl md:text-3xl lg:text-5xl font-bold font-sans mb-4 md:mb-8 bg-gradient-to-r from-custom-blue via-custom-red to-custom-yellow text-transparent bg-clip-text">
-        Popular destinations for ridesharing
+        Popular destinations for cost-sharing
       </h2>
       <div className="md:hidden">
         {/* Mobile layout: scrollable list */}

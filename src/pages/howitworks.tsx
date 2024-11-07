@@ -6,9 +6,7 @@ import Footer from "../app/components/Footer";
 export default function HowItWorksPage() {
   return (
     <>
-      <Header />
       <HowItWorks />
-      <Footer />
     </>
   );
 }

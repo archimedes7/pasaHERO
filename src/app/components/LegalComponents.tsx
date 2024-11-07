@@ -115,7 +115,7 @@ const LegalComponents: React.FC = () => {
               If you have any questions about this Privacy Policy, please{" "}
               <a
                 ref={contactEmailRef}
-                href="#contact"
+                href="mailto:inquiry@pasahero.ph"
                 className="text-blue-600 hover:text-blue-800"
               >
                 contact us
@@ -231,7 +231,7 @@ const LegalComponents: React.FC = () => {
               If you have any questions about these Terms, please{" "}
               <a
                 ref={contactEmailRef}
-                href="#contact"
+                href="mailto:inquiry@pasahero.ph"
                 className="text-blue-600 hover:text-blue-800"
               >
                 contact us

@@ -42,14 +42,32 @@ const Header = () => {
             >
               About Us
             </Link>
+            <Link
+              href="/pasatoda"
+              className="text-white hover:text-custom-blue transition duration-300"
+            >
+              HeroTODA
+            </Link>
+            <Link
+              href="/parkspace"
+              className="text-white hover:text-custom-blue transition duration-300"
+            >
+              HeroPARK
+            </Link>
+            <Link
+              href="/relief-support"
+              className="text-white hover:text-custom-blue transition duration-300"
+            >
+              Relief Support HERO
+            </Link>
           </nav>
 
           {/* Early Bird Signup Button */}
-          <div className="hidden md:block">
-            <button className="bg-custom-blue text-white px-6 py-2 rounded-xl text-sm font-roboto leading-5 hover:bg-custom-blue-dark transition duration-300">
-              Early Bird Signup
+          <Link href="/signup" passHref>
+            <button className="bg-custom-blue text-white px-4 py-2 rounded-xl text-sm font-roboto leading-5 hover:bg-custom-blue-dark transition duration-300">
+              Early bird signup
             </button>
-          </div>
+          </Link>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
@@ -91,10 +109,24 @@ const Header = () => {
               >
                 About Us
               </Link>
+              <Link
+                href="/pasatoda"
+                className="text-white hover:text-custom-blue transition duration-300"
+              >
+                PASATODA
+              </Link>
+              <Link
+                href="/parkspace"
+                className="text-white hover:text-custom-blue transition duration-300"
+              >
+                ParkHERO
+              </Link>
               <SearchForm isMobile={true} />
-              <button className="bg-custom-blue text-white px-6 py-2 rounded-xl text-sm font-roboto leading-5 hover:bg-custom-blue-dark transition duration-300 self-start">
-                Early Bird Signup
-              </button>
+              <Link href="/signup" passHref>
+                <button className="bg-custom-blue text-white px-6 py-2 rounded-xl text-sm font-roboto leading-5 hover:bg-custom-blue-dark transition duration-300 self-start">
+                  Early Bird Signup
+                </button>
+              </Link>
             </nav>
           </div>
         )}

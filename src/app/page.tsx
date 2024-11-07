@@ -1,9 +1,6 @@
 // src/app/page.tsx
-import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ExclusiveDeals from "./components/ExclusiveDeals";
-import RidesLoved from "./components/RidesLoved";
-import Footer from "./components/Footer";
 import { PopularDestinationsCarousel } from "./components/PopularDestinationsCarousel";
 
 const Home = () => {
@@ -92,13 +89,11 @@ const Home = () => {
 
   return (
     <main className="min-h-screen bg-gray-100">
-      <Header />
       <div>
         {" "}
         <HeroSection />
         <PopularDestinationsCarousel />
         <ExclusiveDeals />
-        <Footer />
       </div>
     </main>
   );

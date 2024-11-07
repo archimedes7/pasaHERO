@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 const ExclusiveDeals = () => (
   <section className="exclusive-deals py-10 bg-gray-200">
@@ -9,17 +10,19 @@ const ExclusiveDeals = () => (
         </svg>
         <div>
           <h3 className="text-2xl text-custom-blue font-bold">
-            Exclusive Deals!
+            Participate on our Survey!
           </h3>
           <p className="text-custom-blue">
-            Want exclusive offers and discounts for your ridesharing adventures?
-            Sign up in our wait list!
+            Want exclusive offers and discounts on your rideshare adventures?
+            Join our survey!
           </p>
         </div>
       </div>
-      <button className="bg-custom-blue text-white px-4 py-2 rounded-xl text-sm font-roboto leading-5">
-        Join now
-      </button>
+      <Link href="/signup" passHref>
+        <button className="bg-custom-blue text-white px-4 py-2 rounded-xl text-sm font-roboto leading-5 hover:bg-custom-blue-dark transition duration-300">
+          Join now
+        </button>
+      </Link>
     </div>
   </section>
 );

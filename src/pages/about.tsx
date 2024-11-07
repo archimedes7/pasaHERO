@@ -7,9 +7,7 @@ import Footer from "../app/components/Footer";
 export default function AboutPage() {
   return (
     <>
-      <Header />
       <AboutSection />
-      <Footer />
     </>
   );
 }
