@@ -19,7 +19,7 @@ const HeroSection = () => (
           Become a HERO: Share Rides, Save Costs, Make an Impact.
         </h2>
         <p className="mb-4 sm:mb-8 text-base sm:text-lg md:text-xl text-white max-w-md mx-auto">
-          Discover rides near you!
+          Discover features that can help you!
         </p>
       </div>
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 z-10 w-full px-8 hidden md:block">
